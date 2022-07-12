@@ -1,4 +1,4 @@
-package com.luisyass.helpdesk.models;
+package com.luisyass.helpdesk.domain.account.model;
 
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
@@ -13,16 +13,16 @@ import java.util.UUID;
 @Table(name = "accounts")
 
 public class Account {
-   @Id
-   @GeneratedValue(generator = "uuid2")
-   @GenericGenerator(name = "uuid2", strategy = "uuid2")
-   @Type(type = "uuid-char")
-   private UUID id;
+    @Id
+    @GeneratedValue(generator = "uuid2")
+    @GenericGenerator(name = "uuid2", strategy = "uuid2")
+    @Type(type = "uuid-char")
+    private UUID id;
 
-   private String firstName;
-   private String lastName;
-   private String email;
-   private String password;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String password;
 
     public Account() {
     }
@@ -86,4 +86,3 @@ public class Account {
                 '}';
     }
 }
-

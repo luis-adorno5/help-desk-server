@@ -1,10 +1,9 @@
-package com.luisyass.helpdesk.services;
+package com.luisyass.helpdesk.domain.account.services;
 
-import com.luisyass.helpdesk.models.Account;
-
-import java.util.List;
+import com.luisyass.helpdesk.domain.account.model.Account;
 
 public interface AccountService {
     public Account create(Account account);
+
     public Iterable<Account> getAllAccounts();
 }

@@ -1,5 +1,6 @@
-package com.luisyass.helpdesk.repos;
-import com.luisyass.helpdesk.models.Account;
+package com.luisyass.helpdesk.domain.account.repo;
+
+import com.luisyass.helpdesk.domain.account.model.Account;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.UUID;

@@ -1,7 +1,7 @@
-package com.luisyass.helpdesk.controller;
+package com.luisyass.helpdesk.domain.account.controller;
 
-import com.luisyass.helpdesk.models.Account;
-import com.luisyass.helpdesk.services.AccountService;
+import com.luisyass.helpdesk.domain.account.model.Account;
+import com.luisyass.helpdesk.domain.account.services.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +16,7 @@ public class Controller {
     }
 
     @GetMapping("/accounts")
-    public Iterable<Account> getAllAccounts(){
+    public Iterable<Account> getAllAccounts() {
         return accountService.getAllAccounts();
     }
 }

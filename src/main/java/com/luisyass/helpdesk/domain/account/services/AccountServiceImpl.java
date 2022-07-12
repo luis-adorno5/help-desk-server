@@ -1,11 +1,9 @@
-package com.luisyass.helpdesk.services;
+package com.luisyass.helpdesk.domain.account.services;
 
-import com.luisyass.helpdesk.models.Account;
-import com.luisyass.helpdesk.repos.AccountRepo;
+import com.luisyass.helpdesk.domain.account.model.Account;
+import com.luisyass.helpdesk.domain.account.repo.AccountRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class AccountServiceImpl implements AccountService {
@@ -16,7 +14,7 @@ public class AccountServiceImpl implements AccountService {
         this.accountrepo = accountrepo;
     }
 
-    public Account create(Account account){
+    public Account create(Account account) {
         return accountrepo.save(account);
     }
 
